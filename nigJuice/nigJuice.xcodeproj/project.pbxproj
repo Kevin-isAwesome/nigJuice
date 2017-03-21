@@ -1,0 +1,571 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		041978761E7362BB00BCA54C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 041978751E7362BB00BCA54C /* AppDelegate.swift */; };
+		041978781E7362BB00BCA54C /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 041978771E7362BB00BCA54C /* ViewController.swift */; };
+		0419787B1E7362BB00BCA54C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 041978791E7362BB00BCA54C /* Main.storyboard */; };
+		0419787D1E7362BB00BCA54C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0419787C1E7362BB00BCA54C /* Assets.xcassets */; };
+		041978801E7362BB00BCA54C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0419787E1E7362BB00BCA54C /* LaunchScreen.storyboard */; };
+		0419788B1E7362BB00BCA54C /* nigJuiceTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0419788A1E7362BB00BCA54C /* nigJuiceTests.swift */; };
+		041978961E7362BB00BCA54C /* nigJuiceUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 041978951E7362BB00BCA54C /* nigJuiceUITests.swift */; };
+		041978A51E7362FE00BCA54C /* View1.swift in Sources */ = {isa = PBXBuildFile; fileRef = 041978A31E7362FE00BCA54C /* View1.swift */; };
+		041978A61E7362FE00BCA54C /* View1.xib in Resources */ = {isa = PBXBuildFile; fileRef = 041978A41E7362FE00BCA54C /* View1.xib */; };
+		041978A91E7363F700BCA54C /* View2.swift in Sources */ = {isa = PBXBuildFile; fileRef = 041978A71E7363F700BCA54C /* View2.swift */; };
+		041978AA1E7363F700BCA54C /* View2.xib in Resources */ = {isa = PBXBuildFile; fileRef = 041978A81E7363F700BCA54C /* View2.xib */; };
+		041978AD1E73640400BCA54C /* View3.swift in Sources */ = {isa = PBXBuildFile; fileRef = 041978AB1E73640400BCA54C /* View3.swift */; };
+		041978AE1E73640400BCA54C /* View3.xib in Resources */ = {isa = PBXBuildFile; fileRef = 041978AC1E73640400BCA54C /* View3.xib */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		041978871E7362BB00BCA54C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 0419786A1E7362BB00BCA54C /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 041978711E7362BB00BCA54C;
+			remoteInfo = nigJuice;
+		};
+		041978921E7362BB00BCA54C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 0419786A1E7362BB00BCA54C /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 041978711E7362BB00BCA54C;
+			remoteInfo = nigJuice;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		041978721E7362BB00BCA54C /* nigJuice.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = nigJuice.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		041978751E7362BB00BCA54C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		041978771E7362BB00BCA54C /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		0419787A1E7362BB00BCA54C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		0419787C1E7362BB00BCA54C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		0419787F1E7362BB00BCA54C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		041978811E7362BB00BCA54C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		041978861E7362BB00BCA54C /* nigJuiceTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = nigJuiceTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		0419788A1E7362BB00BCA54C /* nigJuiceTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = nigJuiceTests.swift; sourceTree = "<group>"; };
+		0419788C1E7362BB00BCA54C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		041978911E7362BB00BCA54C /* nigJuiceUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = nigJuiceUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		041978951E7362BB00BCA54C /* nigJuiceUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = nigJuiceUITests.swift; sourceTree = "<group>"; };
+		041978971E7362BB00BCA54C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		041978A31E7362FE00BCA54C /* View1.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = View1.swift; sourceTree = "<group>"; };
+		041978A41E7362FE00BCA54C /* View1.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = View1.xib; sourceTree = "<group>"; };
+		041978A71E7363F700BCA54C /* View2.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = View2.swift; sourceTree = "<group>"; };
+		041978A81E7363F700BCA54C /* View2.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = View2.xib; sourceTree = "<group>"; };
+		041978AB1E73640400BCA54C /* View3.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = View3.swift; sourceTree = "<group>"; };
+		041978AC1E73640400BCA54C /* View3.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = View3.xib; sourceTree = "<group>"; };
+		04775B7B1E73AD8500A6AE42 /* nigJuice.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = nigJuice.entitlements; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		0419786F1E7362BB00BCA54C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		041978831E7362BB00BCA54C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0419788E1E7362BB00BCA54C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		041978691E7362BB00BCA54C = {
+			isa = PBXGroup;
+			children = (
+				041978741E7362BB00BCA54C /* nigJuice */,
+				041978891E7362BB00BCA54C /* nigJuiceTests */,
+				041978941E7362BB00BCA54C /* nigJuiceUITests */,
+				041978731E7362BB00BCA54C /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		041978731E7362BB00BCA54C /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				041978721E7362BB00BCA54C /* nigJuice.app */,
+				041978861E7362BB00BCA54C /* nigJuiceTests.xctest */,
+				041978911E7362BB00BCA54C /* nigJuiceUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		041978741E7362BB00BCA54C /* nigJuice */ = {
+			isa = PBXGroup;
+			children = (
+				04775B7B1E73AD8500A6AE42 /* nigJuice.entitlements */,
+				041978751E7362BB00BCA54C /* AppDelegate.swift */,
+				041978771E7362BB00BCA54C /* ViewController.swift */,
+				041978791E7362BB00BCA54C /* Main.storyboard */,
+				041978A71E7363F700BCA54C /* View2.swift */,
+				041978A81E7363F700BCA54C /* View2.xib */,
+				041978AB1E73640400BCA54C /* View3.swift */,
+				041978AC1E73640400BCA54C /* View3.xib */,
+				041978A31E7362FE00BCA54C /* View1.swift */,
+				041978A41E7362FE00BCA54C /* View1.xib */,
+				0419787C1E7362BB00BCA54C /* Assets.xcassets */,
+				0419787E1E7362BB00BCA54C /* LaunchScreen.storyboard */,
+				041978811E7362BB00BCA54C /* Info.plist */,
+			);
+			path = nigJuice;
+			sourceTree = "<group>";
+		};
+		041978891E7362BB00BCA54C /* nigJuiceTests */ = {
+			isa = PBXGroup;
+			children = (
+				0419788A1E7362BB00BCA54C /* nigJuiceTests.swift */,
+				0419788C1E7362BB00BCA54C /* Info.plist */,
+			);
+			path = nigJuiceTests;
+			sourceTree = "<group>";
+		};
+		041978941E7362BB00BCA54C /* nigJuiceUITests */ = {
+			isa = PBXGroup;
+			children = (
+				041978951E7362BB00BCA54C /* nigJuiceUITests.swift */,
+				041978971E7362BB00BCA54C /* Info.plist */,
+			);
+			path = nigJuiceUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		041978711E7362BB00BCA54C /* nigJuice */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 0419789A1E7362BB00BCA54C /* Build configuration list for PBXNativeTarget "nigJuice" */;
+			buildPhases = (
+				0419786E1E7362BB00BCA54C /* Sources */,
+				0419786F1E7362BB00BCA54C /* Frameworks */,
+				041978701E7362BB00BCA54C /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = nigJuice;
+			productName = nigJuice;
+			productReference = 041978721E7362BB00BCA54C /* nigJuice.app */;
+			productType = "com.apple.product-type.application";
+		};
+		041978851E7362BB00BCA54C /* nigJuiceTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 0419789D1E7362BB00BCA54C /* Build configuration list for PBXNativeTarget "nigJuiceTests" */;
+			buildPhases = (
+				041978821E7362BB00BCA54C /* Sources */,
+				041978831E7362BB00BCA54C /* Frameworks */,
+				041978841E7362BB00BCA54C /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				041978881E7362BB00BCA54C /* PBXTargetDependency */,
+			);
+			name = nigJuiceTests;
+			productName = nigJuiceTests;
+			productReference = 041978861E7362BB00BCA54C /* nigJuiceTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		041978901E7362BB00BCA54C /* nigJuiceUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 041978A01E7362BB00BCA54C /* Build configuration list for PBXNativeTarget "nigJuiceUITests" */;
+			buildPhases = (
+				0419788D1E7362BB00BCA54C /* Sources */,
+				0419788E1E7362BB00BCA54C /* Frameworks */,
+				0419788F1E7362BB00BCA54C /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				041978931E7362BB00BCA54C /* PBXTargetDependency */,
+			);
+			name = nigJuiceUITests;
+			productName = nigJuiceUITests;
+			productReference = 041978911E7362BB00BCA54C /* nigJuiceUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		0419786A1E7362BB00BCA54C /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0820;
+				LastUpgradeCheck = 0820;
+				ORGANIZATIONNAME = "Kevin Vo";
+				TargetAttributes = {
+					041978711E7362BB00BCA54C = {
+						CreatedOnToolsVersion = 8.2.1;
+						DevelopmentTeam = 7R2B3VGL8X;
+						ProvisioningStyle = Automatic;
+						SystemCapabilities = {
+							com.apple.Siri = {
+								enabled = 1;
+							};
+						};
+					};
+					041978851E7362BB00BCA54C = {
+						CreatedOnToolsVersion = 8.2.1;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 041978711E7362BB00BCA54C;
+					};
+					041978901E7362BB00BCA54C = {
+						CreatedOnToolsVersion = 8.2.1;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 041978711E7362BB00BCA54C;
+					};
+				};
+			};
+			buildConfigurationList = 0419786D1E7362BB00BCA54C /* Build configuration list for PBXProject "nigJuice" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 041978691E7362BB00BCA54C;
+			productRefGroup = 041978731E7362BB00BCA54C /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				041978711E7362BB00BCA54C /* nigJuice */,
+				041978851E7362BB00BCA54C /* nigJuiceTests */,
+				041978901E7362BB00BCA54C /* nigJuiceUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		041978701E7362BB00BCA54C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				041978801E7362BB00BCA54C /* LaunchScreen.storyboard in Resources */,
+				0419787D1E7362BB00BCA54C /* Assets.xcassets in Resources */,
+				041978AE1E73640400BCA54C /* View3.xib in Resources */,
+				041978A61E7362FE00BCA54C /* View1.xib in Resources */,
+				041978AA1E7363F700BCA54C /* View2.xib in Resources */,
+				0419787B1E7362BB00BCA54C /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		041978841E7362BB00BCA54C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0419788F1E7362BB00BCA54C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		0419786E1E7362BB00BCA54C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				041978781E7362BB00BCA54C /* ViewController.swift in Sources */,
+				041978AD1E73640400BCA54C /* View3.swift in Sources */,
+				041978A51E7362FE00BCA54C /* View1.swift in Sources */,
+				041978761E7362BB00BCA54C /* AppDelegate.swift in Sources */,
+				041978A91E7363F700BCA54C /* View2.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		041978821E7362BB00BCA54C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0419788B1E7362BB00BCA54C /* nigJuiceTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0419788D1E7362BB00BCA54C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				041978961E7362BB00BCA54C /* nigJuiceUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		041978881E7362BB00BCA54C /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 041978711E7362BB00BCA54C /* nigJuice */;
+			targetProxy = 041978871E7362BB00BCA54C /* PBXContainerItemProxy */;
+		};
+		041978931E7362BB00BCA54C /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 041978711E7362BB00BCA54C /* nigJuice */;
+			targetProxy = 041978921E7362BB00BCA54C /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		041978791E7362BB00BCA54C /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				0419787A1E7362BB00BCA54C /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		0419787E1E7362BB00BCA54C /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				0419787F1E7362BB00BCA54C /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		041978981E7362BB00BCA54C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		041978991E7362BB00BCA54C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		0419789B1E7362BB00BCA54C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = nigJuice/nigJuice.entitlements;
+				DEVELOPMENT_TEAM = 7R2B3VGL8X;
+				INFOPLIST_FILE = nigJuice/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = khelion.nigJuice;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		0419789C1E7362BB00BCA54C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = nigJuice/nigJuice.entitlements;
+				DEVELOPMENT_TEAM = 7R2B3VGL8X;
+				INFOPLIST_FILE = nigJuice/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = khelion.nigJuice;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		0419789E1E7362BB00BCA54C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = nigJuiceTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = khelion.nigJuiceTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/nigJuice.app/nigJuice";
+			};
+			name = Debug;
+		};
+		0419789F1E7362BB00BCA54C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = nigJuiceTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = khelion.nigJuiceTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/nigJuice.app/nigJuice";
+			};
+			name = Release;
+		};
+		041978A11E7362BB00BCA54C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				INFOPLIST_FILE = nigJuiceUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = khelion.nigJuiceUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_TARGET_NAME = nigJuice;
+			};
+			name = Debug;
+		};
+		041978A21E7362BB00BCA54C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				INFOPLIST_FILE = nigJuiceUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = khelion.nigJuiceUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_TARGET_NAME = nigJuice;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		0419786D1E7362BB00BCA54C /* Build configuration list for PBXProject "nigJuice" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				041978981E7362BB00BCA54C /* Debug */,
+				041978991E7362BB00BCA54C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		0419789A1E7362BB00BCA54C /* Build configuration list for PBXNativeTarget "nigJuice" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0419789B1E7362BB00BCA54C /* Debug */,
+				0419789C1E7362BB00BCA54C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		0419789D1E7362BB00BCA54C /* Build configuration list for PBXNativeTarget "nigJuiceTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0419789E1E7362BB00BCA54C /* Debug */,
+				0419789F1E7362BB00BCA54C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		041978A01E7362BB00BCA54C /* Build configuration list for PBXNativeTarget "nigJuiceUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				041978A11E7362BB00BCA54C /* Debug */,
+				041978A21E7362BB00BCA54C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 0419786A1E7362BB00BCA54C /* Project object */;
+}

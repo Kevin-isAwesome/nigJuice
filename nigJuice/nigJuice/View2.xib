@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11762" systemVersion="16D32" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="View2" customModule="nigJuice" customModuleProvider="target">
+            <connections>
+                <outlet property="button" destination="WtW-Xg-6YF" id="4cy-XL-dKW"/>
+                <outlet property="cameraBackground" destination="O4S-AY-mzL" id="EBU-n3-bGV"/>
+                <outlet property="cameraView" destination="pWX-DE-xa0" id="NS7-kl-HFN"/>
+                <outlet property="clearButton" destination="DD5-sC-c37" id="hcR-ZD-Y6Y"/>
+                <outlet property="libraryButton" destination="bsc-Jm-9aM" id="K49-Wf-eDR"/>
+                <outlet property="modeButton" destination="sWi-Yj-aGn" id="EQy-vC-oFm"/>
+                <outlet property="processButton" destination="ZEj-4b-6zy" id="KUK-kl-CnD"/>
+                <outlet property="saveButton" destination="VY4-wb-Yeh" id="F7j-VX-bXt"/>
+                <outlet property="tempImageview" destination="2wi-Qz-Edi" id="e0O-VY-F8O"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="pWX-DE-xa0">
+                    <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                    <subviews>
+                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="2wi-Qz-Edi">
+                            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        </imageView>
+                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="camera background" translatesAutoresizingMaskIntoConstraints="NO" id="O4S-AY-mzL">
+                            <rect key="frame" x="0.0" y="574" width="375" height="93"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        </imageView>
+                        <button opaque="NO" contentMode="scaleAspectFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WtW-Xg-6YF">
+                            <rect key="frame" x="150" y="584" width="75" height="75"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <state key="normal" title="CaptureButton" image="camera button"/>
+                            <connections>
+                                <action selector="takePhoto:" destination="-1" eventType="touchUpInside" id="PJb-gl-0MX"/>
+                            </connections>
+                        </button>
+                        <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bsc-Jm-9aM">
+                            <rect key="frame" x="8" y="603" width="40" height="38"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <state key="normal" title="Button" image="library"/>
+                            <connections>
+                                <action selector="libraryClicked:" destination="-1" eventType="touchUpInside" id="UNr-6R-vL1"/>
+                            </connections>
+                        </button>
+                        <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="sWi-Yj-aGn">
+                            <rect key="frame" x="327" y="601" width="40" height="40"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <state key="normal" title="Button" image="langscape"/>
+                            <connections>
+                                <action selector="modeClicked:" destination="-1" eventType="touchUpInside" id="IEA-Jp-kR5"/>
+                            </connections>
+                        </button>
+                        <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="DD5-sC-c37">
+                            <rect key="frame" x="8" y="65" width="40" height="40"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <state key="normal" image="discard"/>
+                            <connections>
+                                <action selector="clearClicked:" destination="-1" eventType="touchUpInside" id="gyC-fD-1b7"/>
+                            </connections>
+                        </button>
+                        <button opaque="NO" contentMode="scaleAspectFit" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ZEj-4b-6zy">
+                            <rect key="frame" x="327" y="65" width="40" height="40"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <state key="normal" image="accept"/>
+                            <connections>
+                                <action selector="processButton:" destination="-1" eventType="touchUpInside" id="Maz-4g-vje"/>
+                            </connections>
+                        </button>
+                        <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="VY4-wb-Yeh">
+                            <rect key="frame" x="327" y="65" width="40" height="40"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <state key="normal" image="accept"/>
+                            <connections>
+                                <action selector="saveClicked:" destination="-1" eventType="touchUpInside" id="yZQ-Nv-Rsx"/>
+                            </connections>
+                        </button>
+                    </subviews>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                </view>
+            </subviews>
+            <color key="backgroundColor" red="1" green="0.49787154993973382" blue="0.53092548146359786" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="pWX-DE-xa0" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="LaA-Zn-JSq"/>
+                <constraint firstAttribute="trailing" secondItem="pWX-DE-xa0" secondAttribute="trailing" id="YlQ-i9-K0M"/>
+                <constraint firstAttribute="bottom" secondItem="pWX-DE-xa0" secondAttribute="bottom" id="kdJ-Fb-rRB"/>
+                <constraint firstItem="pWX-DE-xa0" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="oP8-yL-O9D"/>
+            </constraints>
+            <point key="canvasLocation" x="24.5" y="51.5"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="accept" width="320" height="296"/>
+        <image name="camera background" width="750" height="153"/>
+        <image name="camera button" width="112" height="112"/>
+        <image name="discard" width="277" height="248"/>
+        <image name="langscape" width="73" height="75"/>
+        <image name="library" width="78" height="73"/>
+    </resources>
+</document>
