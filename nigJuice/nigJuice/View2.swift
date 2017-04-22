@@ -173,7 +173,7 @@ class View2: UIViewController, AVCapturePhotoCaptureDelegate, UIImagePickerContr
             let imageData = UIImageJPEGRepresentation(tempImageview.image!, 0.9)
             let strBase64:String = imageData!.base64EncodedString(options: .lineLength64Characters)
             let params = ["image":[ "content_type": "image/jpeg", "filename":"test.jpg", "file_data": strBase64]]
-            var request = URLRequest(url: URL(string: "http://10.99.6.117:5000/todo/api/v1.0/tasks")!)
+            var request = URLRequest(url: URL(string: "http://khelion.doomdns.com:5000/todo/api/v1.0/tasks")!)
             do{
                 try request.httpBody = JSONSerialization.data(withJSONObject: params, options: JSONSerialization.WritingOptions() )
             }
@@ -182,9 +182,10 @@ class View2: UIViewController, AVCapturePhotoCaptureDelegate, UIImagePickerContr
             }
             request.httpMethod = "POST"
             request.addValue("application/json", forHTTPHeaderField: "Content-Type")
-            let postString = "{\"title\":\"Success\",\"description\":\" \"}"
-            print(postString)
-            request.httpBody = postString.data(using: .utf8)
+            //let postString = strBase64//"{\"title\":\"Success\",\"description\":\" \"}"
+            //print(postString)
+            //request.httpBody = postString.data(using: .ascii)
+            print(params)
             let task = URLSession.shared.dataTask(with: request) { data, response, error in
                 guard let data = data, error == nil else {                                                 // check for fundamental networking error
                     print("error=\(error)")
