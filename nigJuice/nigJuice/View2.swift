@@ -170,6 +170,8 @@ class View2: UIViewController, AVCapturePhotoCaptureDelegate, UIImagePickerContr
             failNotice()
         }
         else {
+            
+            
             let imageData = UIImageJPEGRepresentation(tempImageview.image!, 0.9)
             let strBase64:String = imageData!.base64EncodedString(options: .lineLength64Characters)
             let params = ["image":[ "content_type": "image/jpeg", "filename":"test.jpg", "file_data": strBase64]]
