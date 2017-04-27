@@ -10,8 +10,11 @@ import UIKit
 
 class View1: UIViewController {
 
+    @IBOutlet weak var rotate: UIImageView!
     override func viewDidLoad() {
         super.viewDidLoad()
+        self.view.backgroundColor = UIColor(patternImage: UIImage(named: "bakground.png")!)
+        self.view.addSubview(rotate)
 
         // Do any additional setup after loading the view.
     }

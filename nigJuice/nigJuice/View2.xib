@@ -1,24 +1,29 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11762" systemVersion="16D32" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="12118" systemVersion="16E195" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12086"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="View2" customModule="nigJuice" customModuleProvider="target">
             <connections>
+                <outlet property="angry" destination="qwS-W7-D7o" id="3xf-Bo-osq"/>
                 <outlet property="button" destination="WtW-Xg-6YF" id="4cy-XL-dKW"/>
                 <outlet property="cameraBackground" destination="O4S-AY-mzL" id="EBU-n3-bGV"/>
                 <outlet property="cameraView" destination="pWX-DE-xa0" id="NS7-kl-HFN"/>
                 <outlet property="clearButton" destination="DD5-sC-c37" id="hcR-ZD-Y6Y"/>
+                <outlet property="happy" destination="JNI-yS-YA7" id="WXw-xg-bUW"/>
                 <outlet property="libraryButton" destination="bsc-Jm-9aM" id="K49-Wf-eDR"/>
                 <outlet property="modeButton" destination="sWi-Yj-aGn" id="EQy-vC-oFm"/>
+                <outlet property="neutral" destination="tIT-0k-wIk" id="FXj-LH-Sxb"/>
                 <outlet property="processButton" destination="ZEj-4b-6zy" id="KUK-kl-CnD"/>
+                <outlet property="sad" destination="djx-gy-otl" id="nQq-vY-9vU"/>
                 <outlet property="saveButton" destination="VY4-wb-Yeh" id="F7j-VX-bXt"/>
+                <outlet property="surprised" destination="IbV-Gk-6AI" id="JWg-nf-ilN"/>
                 <outlet property="tempImageview" destination="2wi-Qz-Edi" id="e0O-VY-F8O"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
             </connections>
@@ -42,7 +47,7 @@
                         <button opaque="NO" contentMode="scaleAspectFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WtW-Xg-6YF">
                             <rect key="frame" x="150" y="584" width="75" height="75"/>
                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                            <state key="normal" title="CaptureButton" image="camera button"/>
+                            <state key="normal" title="CaptureButton" image="camera button2"/>
                             <connections>
                                 <action selector="takePhoto:" destination="-1" eventType="touchUpInside" id="PJb-gl-0MX"/>
                             </connections>
@@ -64,27 +69,47 @@
                             </connections>
                         </button>
                         <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="DD5-sC-c37">
-                            <rect key="frame" x="8" y="65" width="40" height="40"/>
+                            <rect key="frame" x="8" y="36" width="40" height="40"/>
                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                            <state key="normal" image="discard"/>
+                            <state key="normal" image="x"/>
                             <connections>
                                 <action selector="clearClicked:" destination="-1" eventType="touchUpInside" id="gyC-fD-1b7"/>
                             </connections>
                         </button>
-                        <button opaque="NO" contentMode="scaleAspectFit" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ZEj-4b-6zy">
-                            <rect key="frame" x="327" y="65" width="40" height="40"/>
-                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                            <state key="normal" image="accept"/>
-                            <connections>
-                                <action selector="processButton:" destination="-1" eventType="touchUpInside" id="Maz-4g-vje"/>
-                            </connections>
-                        </button>
                         <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="VY4-wb-Yeh">
-                            <rect key="frame" x="327" y="65" width="40" height="40"/>
+                            <rect key="frame" x="327" y="36" width="40" height="40"/>
                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                            <state key="normal" image="accept"/>
+                            <state key="normal" image="select"/>
                             <connections>
                                 <action selector="saveClicked:" destination="-1" eventType="touchUpInside" id="yZQ-Nv-Rsx"/>
+                            </connections>
+                        </button>
+                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="happy" translatesAutoresizingMaskIntoConstraints="NO" id="JNI-yS-YA7">
+                            <rect key="frame" x="137" y="0.0" width="100" height="667"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        </imageView>
+                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="sad" translatesAutoresizingMaskIntoConstraints="NO" id="djx-gy-otl">
+                            <rect key="frame" x="137" y="0.0" width="100" height="667"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        </imageView>
+                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="angry" translatesAutoresizingMaskIntoConstraints="NO" id="qwS-W7-D7o">
+                            <rect key="frame" x="137" y="0.0" width="100" height="667"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        </imageView>
+                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="surprised" translatesAutoresizingMaskIntoConstraints="NO" id="IbV-Gk-6AI">
+                            <rect key="frame" x="137" y="0.0" width="100" height="667"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        </imageView>
+                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="neutral" translatesAutoresizingMaskIntoConstraints="NO" id="tIT-0k-wIk">
+                            <rect key="frame" x="137" y="0.0" width="100" height="667"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        </imageView>
+                        <button opaque="NO" contentMode="scaleAspectFit" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ZEj-4b-6zy">
+                            <rect key="frame" x="327" y="36" width="40" height="40"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <state key="normal" image="select"/>
+                            <connections>
+                                <action selector="processButton:" destination="-1" eventType="touchUpInside" id="Maz-4g-vje"/>
                             </connections>
                         </button>
                     </subviews>
@@ -102,11 +127,16 @@
         </view>
     </objects>
     <resources>
-        <image name="accept" width="320" height="296"/>
+        <image name="angry" width="360" height="3024"/>
         <image name="camera background" width="750" height="153"/>
-        <image name="camera button" width="112" height="112"/>
-        <image name="discard" width="277" height="248"/>
+        <image name="camera button2" width="112" height="112"/>
+        <image name="happy" width="360" height="3024"/>
         <image name="langscape" width="73" height="75"/>
         <image name="library" width="78" height="73"/>
+        <image name="neutral" width="360" height="3024"/>
+        <image name="sad" width="360" height="3024"/>
+        <image name="select" width="198" height="223"/>
+        <image name="surprised" width="360" height="3024"/>
+        <image name="x" width="246" height="226"/>
     </resources>
 </document>

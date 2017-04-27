@@ -20,6 +20,13 @@ class View2: UIViewController, AVCapturePhotoCaptureDelegate, UIImagePickerContr
     
     @IBOutlet var processButton: UIButton!
 
+    
+    @IBOutlet weak var happy: UIImageView!
+    @IBOutlet weak var sad: UIImageView!
+    @IBOutlet weak var angry: UIImageView!
+    @IBOutlet weak var surprised: UIImageView!
+    @IBOutlet weak var neutral: UIImageView!
+    
     @IBOutlet weak var imageView: UIImageView!
     
 
@@ -32,6 +39,7 @@ class View2: UIViewController, AVCapturePhotoCaptureDelegate, UIImagePickerContr
     override func viewDidLoad() {
         super.viewDidLoad()
         self.imagePicker.delegate = self
+        
 
         // Do any additional setup after loading the view.
     }
@@ -40,6 +48,7 @@ class View2: UIViewController, AVCapturePhotoCaptureDelegate, UIImagePickerContr
         super.viewWillAppear(animated)
         
         let deviceSession = AVCaptureDeviceDiscoverySession(deviceTypes: [.builtInDuoCamera,.builtInTelephotoCamera,.builtInWideAngleCamera], mediaType: AVMediaTypeVideo, position: .unspecified)
+        
         
         for device in (deviceSession?.devices)! {
             
@@ -62,8 +71,8 @@ class View2: UIViewController, AVCapturePhotoCaptureDelegate, UIImagePickerContr
                             cameraView.layer.addSublayer(previewLayer)
                             cameraView.addSubview(cameraBackground)
                             cameraView.addSubview(button)
-                            cameraView.addSubview(libraryButton)
-                            cameraView.addSubview(modeButton)
+                            //cameraView.addSubview(libraryButton)
+                            //cameraView.addSubview(modeButton)
                             
                             previewLayer.position = CGPoint (x: self.cameraView.frame.width / 2, y: self.cameraView.frame.height / 2)
                             previewLayer.bounds = cameraView.frame
@@ -148,6 +157,7 @@ class View2: UIViewController, AVCapturePhotoCaptureDelegate, UIImagePickerContr
             
         }
     }
+    
     func imagePickerController(_ picker: UIImagePickerController, didFinishPickingImage image: UIImage!, editingInfo: [NSObject : AnyObject]!){
         tempImageview.image = image
         self.dismiss(animated: true, completion: nil);
@@ -159,6 +169,12 @@ class View2: UIViewController, AVCapturePhotoCaptureDelegate, UIImagePickerContr
             clearButton.removeFromSuperview()
             processButton.removeFromSuperview()
             saveButton.removeFromSuperview()
+            
+            self.happy.isHidden = true
+            self.sad.isHidden = true
+            self.angry.isHidden = true
+            self.surprised.isHidden = true
+            self.neutral.isHidden = true
         }
         else {
             return
@@ -170,7 +186,16 @@ class View2: UIViewController, AVCapturePhotoCaptureDelegate, UIImagePickerContr
             failNotice()
         }
         else {
-            let imageData = UIImageJPEGRepresentation(tempImageview.image!, 0.9)
+            self.processButton.isHidden = true
+            self.clearButton.isHidden = true
+            
+            
+            let imageData = UIImageJPEGRepresentation(tempImageview.image!, 0.8)
+    
+            //var jpgData = UIImageJPEGRepresentation(tempImageview.image!, 0.8)
+           
+            
+            
             let strBase64:String = imageData!.base64EncodedString(options: .lineLength64Characters)
             let params = ["image":[ "content_type": "image/jpeg", "filename":"test.jpg", "file_data": strBase64]]
             var request = URLRequest(url: URL(string: "http://khelion.doomdns.com:5000/todo/api/v1.0/tasks")!)
@@ -200,14 +225,57 @@ class View2: UIViewController, AVCapturePhotoCaptureDelegate, UIImagePickerContr
                 let responseString = String(data: data, encoding: .utf8)
                 print("responseString = \(responseString)")
                 print(request)
+                
+                self.view.addSubview(self.happy)
+                self.view.addSubview(self.sad)
+                self.view.addSubview(self.angry)
+                self.view.addSubview(self.surprised)
+                self.view.addSubview(self.neutral)
+                
+                self.happy.isHidden = true
+                self.sad.isHidden = true
+                self.angry.isHidden = true
+                self.surprised.isHidden = true
+                self.neutral.isHidden = true
+                
+                if (responseString == "{\n  \"status\": \"You look so happy!!\"\n}\n"){
+                    print("You look happy!")
+                    self.happy.isHidden = false
+                    
+                }
+                if (responseString == "{\n  \"status\": \"You look so sad!!\"\n}\n"){
+                    print("You look sad!")
+                    self.sad.isHidden = false
+                    
+                }
+                if (responseString == "{\n  \"status\": \"You look so angry!!\"\n}\n"){
+                    print("You look angry!")
+                    self.angry.isHidden = false
+                    
+                }
+                if (responseString == "{\n  \"status\": \"You look so surprised!!\"\n}\n"){
+                    print("You look surprised!")
+                    self.surprised.isHidden = false
+                    
+                }
+                if (responseString == "{\n  \"status\": \"neutral, try again\"\n}\n"){
+                    print("Neutral")
+                    self.neutral.isHidden = false
+                }
+                
+                self.processButton.isHidden = false
+                self.clearButton.isHidden = false
+                
             }
-            jsonSuccess(mes: "Success")
+            
+            //jsonSuccess(mes: "Success")
             task.resume()
             processButton.removeFromSuperview()
-            self.view.addSubview(saveButton)
+            //self.view.addSubview(saveButton)
         }
     }
     
+    /*
     @IBAction func saveClicked(_ sender: Any) {
         if (tempImageview.image != nil) {
             tempImageview.image = nil
@@ -219,6 +287,7 @@ class View2: UIViewController, AVCapturePhotoCaptureDelegate, UIImagePickerContr
             return
         }
     }
+ */
     
     
     
